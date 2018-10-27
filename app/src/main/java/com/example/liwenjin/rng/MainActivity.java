@@ -10,7 +10,7 @@ import android.webkit.WebViewClient;
 
 public class MainActivity extends Activity {
     private WebView webView;
-    private String url = "http://47.107.64.157:8080";
+    private String url = "自己的url";
     private String Tag = "MQL";
 
     @Override
