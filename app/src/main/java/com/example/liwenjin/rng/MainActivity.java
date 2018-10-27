@@ -67,7 +67,7 @@ public class MainActivity extends Activity {
                 //返回true，说明你自己想根据url，做新的跳转，比如在判断url符合条件的情况下，我想让webView加载http://ask.csdn.net/questions/178242
 
                 if (url.toString().contains("sina.cn")){
-                    view.loadUrl("http://47.107.64.157:8080");
+                    view.loadUrl(url);
                     return true;
                 }
 
@@ -81,7 +81,7 @@ public class MainActivity extends Activity {
                 //返回true，说明你自己想根据url，做新的跳转，比如在判断url符合条件的情况下，我想让webView加载http://ask.csdn.net/questions/178242
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
                     if (request.getUrl().toString().contains("sina.cn")){
-                        view.loadUrl("http://47.107.64.157:8080");
+                        view.loadUrl(url);
                         return true;
                     }
                 }
